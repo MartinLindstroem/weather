@@ -1,0 +1,16 @@
+{
+    "name": "marty/weather",
+    "description": "anax weather module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Martin Lindström",
+            "email": "martinllindstroem@gmail.com"
+        }
+    ],
+    "require": {},
+
+    "require-dev": {
+        "phpunit/phpunit": "^7"
+    }
+}
