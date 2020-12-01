@@ -26,7 +26,7 @@ class ApiWeatherControllerTest extends TestCase
         $this->di->loadServices(ANAX_INSTALL_PATH . "/config/di");
 
         // Use a different cache dir for unit test
-        $this->di->get("cache")->setPath(ANAX_INSTALL_PATH . "/test/cache");
+        // $this->di->get("cache")->setPath(ANAX_INSTALL_PATH . "/test/cache");
 
         // View helpers uses the global $di so it needs its value
         $di = $this->di;
@@ -75,8 +75,8 @@ class ApiWeatherControllerTest extends TestCase
         $res = $controller->indexActionPost();
         // $body = $res->getBody();
 
-        $result = $res[0]["municipality"];
-        $exp = "Karlskrona kommun";
+        $result = $res[0]["city"];
+        $exp = "Karlskrona";
 
         // Test when $_POST["location"] is latitude and longitude
         $this->assertContains($exp, $result);
