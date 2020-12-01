@@ -20,6 +20,7 @@
         "anax/request": "^2.0",
         "anax/response": "^2.0",
         "anax/view": "^2.0",
-        "anax/page": "2.0.0-beta.1"
+        "anax/page": "2.0.0-beta.1",
+        "anax/cache": "2.0.0-beta.5"
     }
 }
