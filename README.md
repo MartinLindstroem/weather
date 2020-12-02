@@ -28,12 +28,6 @@ rsync -av vendor/martyzz/weather/config/private_keys_sample.php config/private_k
 # Copy javascript files
 rsync -av vendor/martyzz/weather/js/map.js htdocs/js/
 rsync -av vendor/martyzz/weather/js/token_sample.js htdocs/js/token.js
-
-# Copy src files
-rsync -av vendor/martyzz/weather/src/Weather src/Weather
-
-# Copy view files
-rsync -av vendor/martyzz/weather/view/weather view/weather
 ```
 
 ### Step 3, change values to your own.
@@ -65,14 +59,14 @@ In `config/navbar/header.php` add the routes to the navbar, for example:
 ],
 ```
 
-### Step 6, add vendor name to autoloader.
-In `composer.json` add `"Marty\\": src/` to the `psr-4` autoloader, like this:
+### Step 6, add path to views.
+In `config/views` add `ANAX_INSTALL_PATH . "/vendor/martyzz/weather/view",` to paths, for example:
+```php
+"paths" => [
+    ANAX_INSTALL_PATH . "/view",
+    ANAX_INSTALL_PATH . "/vendor/anax/view/view",
+    ANAX_INSTALL_PATH . "/vendor/martyzz/weather/view",
+],
 ```
-"autoload": {
-    "psr-4": {
-        "Anax\\": "src/",
-        "Marty\\": "src/"
-    }
-},
-```
+
 
