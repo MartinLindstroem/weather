@@ -8,6 +8,11 @@
             "email": "martinllindstroem@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": { 
+            "Marty\\": "src/"
+        }
+    },
     "require": {
         "anax/anax-cli": "^1.2"
     },
