@@ -17,23 +17,23 @@ Copy necessary files
 # Go to your anax base repo
 
 # Copy di config file
-rsync -av vendor/marty/weather/config/di/ip.php config/di/
+rsync -av vendor/martyzz/weather/config/di/ip.php config/di/
 
 # Copy routes
-rsync -av vendor/marty/weather/config/router/ config/router/
+rsync -av vendor/martyzz/weather/config/router/ config/router/
 
 # Copy private_keys_sample file and rename it
-rsync -av vendor/marty/weather/config/private_keys_sample.php config/private_keys.php
+rsync -av vendor/martyzz/weather/config/private_keys_sample.php config/private_keys.php
 
 # Copy javascript files
-rsync -av vendor/marty/weather/js/map.js htdocs/js/
-rsync -av vendor/marty/weather/js/token_sample.js htdocs/js/token.js
+rsync -av vendor/martyzz/weather/js/map.js htdocs/js/
+rsync -av vendor/martyzz/weather/js/token_sample.js htdocs/js/token.js
 
 # Copy src files
-rsync -av vendor/marty/weather/src/Weather src/Weather
+rsync -av vendor/martyzz/weather/src/Weather src/Weather
 
 # Copy view files
-rsync -av vendor/marty/weather/view/weather view/weather
+rsync -av vendor/martyzz/weather/view/weather view/weather
 ```
 
 ### Step 3, change values to your own.
