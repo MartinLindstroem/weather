@@ -65,3 +65,14 @@ In `config/navbar/header.php` add the routes to the navbar, for example:
 ],
 ```
 
+### Step 6, add vendor name to autoloader.
+In `composer.json` add `"Marty\\": src/` to the `psr-4` autoloader, like this:
+```
+"autoload": {
+    "psr-4": {
+        "Anax\\": "src/",
+        "Marty\\": "src/"
+    }
+},
+```
+
