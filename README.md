@@ -8,7 +8,7 @@ Installation
 
 ### Step 1, install using composer.
 Install using composer
-`composer require marty/weather`
+`composer require martyzz/weather`
 
 ### Step 2, integrate with anax.
 Copy necessary files
