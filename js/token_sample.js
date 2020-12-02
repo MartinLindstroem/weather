@@ -1,0 +1,1 @@
+const token = "your openstreetmap key";
