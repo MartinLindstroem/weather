@@ -1,5 +1,6 @@
 Weather
 ================
+[![Build Status](https://travis-ci.com/MartinLindstroem/weather.svg?branch=master)](https://travis-ci.com/MartinLindstroem/weather)
 
 This module implements geolocation with weather information. It is intended to be used with the [Anax](https://github.com/canax) framework.
 
