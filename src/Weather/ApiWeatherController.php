@@ -77,9 +77,14 @@ class ApiWeatherController implements ContainerInjectableInterface
         }
 
         // Get API-key and set it in WeatherModel class
-        $keys = require ANAX_INSTALL_PATH . "/config/private_keys.php";
-        $apiKey = $keys["openWeather"];
-        $weatherModel->setApiKey($apiKey);
+        if (file_exists("config/private_keys.php")) {
+            $keys = require ANAX_INSTALL_PATH . "/config/private_keys.php";
+            $apiKey = $keys["openWeather"];
+            $weatherModel->setApiKey($apiKey);
+        } else {
+            $apiKey = getenv("OPENWEATHER_KEY");
+            $weatherModel->setApiKey($apiKey);
+        }
 
         // Get previous and future weather data
         $weatherModel->getFutureWeatherInfo($lat, $lon);
