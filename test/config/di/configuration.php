@@ -10,7 +10,8 @@ return [
             "shared" => true,
             "callback" => function () {
                 $config = new \Anax\Configure\Configuration();
-                $dirs = require ANAX_INSTALL_PATH . "/config/configuration.php";
+                $dirs = require __DIR__ . "/../configuration.php";
+                // $dirs = require ANAX_INSTALL_PATH . "/test/config/configuration.php";
                 $config->setBaseDirectories($dirs);
                 return $config;
             }
