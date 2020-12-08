@@ -13,12 +13,17 @@ return [
 
                 // Load the configuration files
                 $cfg = $this->get("configuration");
-                $config = $cfg->load("private_keys");
 
-                // Set the api key configuration
-                $key = $config["config"]["ipStack"] ?? "";
-                $ip->setApiKey($key);
+                if (file_exists("config/private_keys.php")) {
+                    $config = $cfg->load("private_keys");
 
+                    // Set the api key configuration
+                    $key = $config["config"]["ipStack"] ?? "";
+                    $ip->setApiKey($key);
+                } else {
+                    $key = getenv("IPSTACK_KEY") ?? "";
+                    $ip->setApiKey($key);
+                }
                 return $ip;
             }
         ],
