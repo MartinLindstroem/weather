@@ -2,6 +2,12 @@ Weather
 ================
 [![Build Status](https://travis-ci.com/MartinLindstroem/weather.svg?branch=master)](https://travis-ci.com/MartinLindstroem/weather)
 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/MartinLindstroem/weather/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/MartinLindstroem/weather/?branch=master)
+
+[![Code Coverage](https://scrutinizer-ci.com/g/MartinLindstroem/weather/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/MartinLindstroem/weather/?branch=master)
+
+[![Build Status](https://scrutinizer-ci.com/g/MartinLindstroem/weather/badges/build.png?b=master)](https://scrutinizer-ci.com/g/MartinLindstroem/weather/build-status/master)
+
 This module implements geolocation with weather information. It is intended to be used with the [Anax](https://github.com/canax) framework.
 
 Installation
